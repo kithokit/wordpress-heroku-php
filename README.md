@@ -14,7 +14,7 @@ This will set up a fresh WordPress install on Heroku with the newly released [He
 
 Use the Deploy to Heroku button, or use the old fashioned way described below.
 
-<a href="https://heroku.com/deploy?template=https://github.com/ellefsen/wordpress-heroku-php/tree/master">
+<a href="https://heroku.com/deploy?template=https://github.com/kithokit/wordpress-heroku-php/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy">
 </a>
 
@@ -65,7 +65,7 @@ Deploy your WordPress site to Heroku.
     │   ├── plugins        # Plugins
     │   ├── mu-plugins     # Required plugins
     │   └── themes         # Your custom themes
-    │      
+    │
     └── wp                 # Where the actual WordPress install will be installed by Composer
 ```
 
@@ -83,7 +83,7 @@ Make sure you have [Composer](https://getcomposer.org/) installed first, then ru
 Create a local .env file.
 
 	CLEARDB_DATABASE_URL=mysql://root:123abc@127.0.0.1/my_wordpress_heroku_database_name
-	
+
 or install the heroku config plugin from https://github.com/ddollar/heroku-config and pull your environment variables from Heroku.
 The second option is to use the provided local-sample-config.php and rename it local-config.php. Update it with your local MySQL credentials, and you're good to go.
 
@@ -111,7 +111,7 @@ Add this below Heroku Toolbelt setting to swap the PHP you use on the command li
 
 
 Now to start your local dev environment run to start WordPress on http://localhost:5000/
-	
+
 	foreman start
 
 If you don't have foreman installed, you can do so with `gem install foreman` assuming you have Ruby running on your system. If it fails, try adding sudo in front of the command.
